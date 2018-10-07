@@ -30,8 +30,7 @@ def handle_info(message):
     global r
     if r == 1:
         bot.send_message(message.chat.id, 'Актуальная версия бота - 0.0.1a \n' +
-                         'Бота написал Str1Ke \n' +
-                         'С участием Winner_oK')
+                         'Бота написал Str1Ke')
     else:
         bot.send_message(message.chat.id, 'Работа еще не начата! \n' +
                          message.from_user.first_name +', пожалуйста напиши: \n' +
