@@ -20,7 +20,7 @@ def handle_stop(message):
     global r
     if r == 1:
         bot.send_message(message.chat.id, 'Работа оконченна!')
-        bot.send_message(message.chat.id, 'Спасибо за использование! ' + message.from_user.first_name)
+        bot.send_message(message.chat.id, 'Спасибо за использование!\n' + message.from_user.first_name)
         r = 0
     else:
         bot.send_message(message.chat.id, 'Работа еще не начата!')
